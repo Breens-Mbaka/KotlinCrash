@@ -9,5 +9,8 @@ fun main() {
     /*Types are inferred during compile time
     and I can only call methods of the same type class */
     val name: String = "John"
-    name.toUpperCase()
+    val upperCase = name.toUpperCase()
+
+    //Suffixing the type with ? shows the value is a nullable type
+    val position: String? = null
 }
