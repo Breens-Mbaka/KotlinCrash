@@ -18,14 +18,33 @@ fun main() {
     val message: String = if(count == 20) {
         "Yes there is seats"
     }
-
     else if (count < 20) {
         "No there is no seats"
     }
-
     else {
         "There is lots of seats remaining."
     }
-
     println(message)
+
+    //When expressions are used as my if-else conditions become more complex
+    val message = when {
+        count == 20 -> "Yes there is seats"
+        count < 20 -> "No there is no seats"
+        else -> "There is lots of seats remaining"
+    }
 }
+//Functions
+fun generateMessage() {
+    val message: String = if(count == 20) {
+        "Yes there is seats"
+    }
+    else if (count < 20) {
+        "No there is no seats"
+    }
+    else {
+        "There is lots of seats remaining."
+    }
+    return message
+}
+//Calling the method
+val resultMessage = generateMessage()
