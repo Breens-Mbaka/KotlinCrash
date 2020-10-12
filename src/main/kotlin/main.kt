@@ -4,5 +4,10 @@ fun main() {
     number = 25
 
     //val is used to declare variables that can't be changed
-    val name: Int = "Paul"
+    val name: String = "Paul"
+
+    /*Types are inferred during compile time
+    and I can only call methods of the same type class */
+    val name: String = "John"
+    name.toUpperCase()
 }
