@@ -33,12 +33,12 @@ fun main() {
         else -> "There is lots of seats remaining"
     }
 }
-//Functions
-fun generateMessage() {
-    val message: String = if(count == 20) {
+//Functions,declaring argumnets
+fun generateMessage(countThreshold: Int): String {
+    val message: String = if(count == countThreshold) {
         "Yes there is seats"
     }
-    else if (count < 20) {
+    else if (count < countThreshold) {
         "No there is no seats"
     }
     else {
@@ -46,5 +46,5 @@ fun generateMessage() {
     }
     return message
 }
-//Calling the method
-val resultMessage = generateMessage()
+//Calling the method that takes an argument
+val resultMessage = generateMessage(20)
