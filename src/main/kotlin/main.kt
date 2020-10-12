@@ -13,4 +13,19 @@ fun main() {
 
     //Suffixing the type with ? shows the value is a nullable type
     val position: String? = null
+
+    //Conditional expressions helps reduce repetion in if-else conditions
+    val message: String = if(count == 20) {
+        "Yes there is seats"
+    }
+
+    else if (count < 20) {
+        "No there is no seats"
+    }
+
+    else {
+        "There is lots of seats remaining."
+    }
+
+    println(message)
 }
